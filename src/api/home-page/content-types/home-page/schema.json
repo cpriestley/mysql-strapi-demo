@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "Home Page"
+    "displayName": "Home Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,14 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.hero-section"
+    },
+    "BlogSelection": {
+      "type": "dynamiczone",
+      "components": [
+        "blog.post-selection",
+        "blog.featured-post"
+      ],
+      "required": true
     }
   }
 }
